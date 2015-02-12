@@ -1,0 +1,66 @@
+/* General */
+.mw .thumbnails {
+	display: inline-block;
+	text-align: center;
+	margin: 15px 15px 0 0;
+}
+.mw .thumbnails a.thumbnail {
+	float: left;
+	width: 150px;
+	background: #fff;	
+	padding: 10px;
+	text-decoration: none;
+}
+
+.mw .thumbnails .thumbnail-div {
+	float: left;
+	width: 140px;
+	background: #fff;	
+	padding: 10px;
+	text-decoration: none;
+	position: relative;
+}
+
+.mw .thumbnails .purchase-plugin {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	font-size: 15px;
+}
+
+.mw .thumbnails .purchase-plugin span {
+	margin: 40px 0 0;
+	display: inline-block;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.mw .thumbnails .disabled {
+	opacity: 0.3;	
+}
+
+/* Instance form */
+label[id^="jform_joomla_type_spacer_"],
+label[id^="jform_k2_type_spacer_"],
+label[id^="jform_jomsocial_type_spacer_"] {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* Menu item params */
+label[id^="jform_params_spacer_"] {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* Other */
+
+small.mnw_separator {
+	background: #f7f7f7;
+	color: #888;	
+	padding: 5px;
+	text-transform: uppercase;
+}

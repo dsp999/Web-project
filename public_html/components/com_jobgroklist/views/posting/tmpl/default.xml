@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SINGLE_JOB_POSTING'>
+        <message>COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SINGLE_JOB_POSTING_MESSAGE</message>
+    </layout>
+    <state>
+        <name>COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SINGLE_JOB_POSTING</name>
+        <description>COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SINGLE_JOB_POSTING_DESCRIPTION</description>
+    </state>
+    <fields name="params">
+        <fieldset name='settings'>
+            <field type="sql" name="id" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_JOB_POSTING' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_POSTING_TO_DISPLAY'
+                   query="SELECT p.id as value, j.title as id FROM #__tst_jglist_postings p INNER JOIN #__tst_jglist_jobs j ON p.job_id=j.id;" />
+            <field name="postings_job_title" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_JOB_TITLE' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_JOB_TITLE'>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SHOW</option>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_HIDE</option>
+            </field>
+            <field name="postings_company" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_COMPANY' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_COMPANY'>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SHOW</option>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_HIDE</option>
+            </field>
+            <field name="postings_summary" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SUMMARY' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_SUMMARY'>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SHOW</option>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_HIDE</option>
+            </field>
+            <field name="postings_posting_date" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_POSTING_DATE' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_POSTING_DATE'>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SHOW</option>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_HIDE</option>
+            </field>
+            <field name="postings_closing_date" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_CLOSING_DATE' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_CLOSING_DATE'>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SHOW</option>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_HIDE</option>
+            </field>
+            <field name="postings_contact_email" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_CONTACT_EMAIL' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_CONTACT_EMAIL'>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SHOW</option>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_HIDE</option>
+            </field>
+            <field name="postings_read_more" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_READ_MORE' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_READ_MORE'>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SHOW</option>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_HIDE</option>
+            </field>
+        </fieldset>
+        <fieldset name='meta_description'>
+            <field name="meta_title" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_META_TITLE' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_META_TITLE'>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_ON</option>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_OFF</option>
+            </field>
+            <field name="meta_location" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_META_LOCATION' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_META_LOCATION'>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_ON</option>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_OFF</option>
+            </field>
+            <field name="meta_company" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_META_COMPANY' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_META_COMPANY'>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_ON</option>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_OFF</option>
+            </field>
+            <field name="meta_job_code" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_META_JOB_CODE' description='COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_SH_META_JOB_CODE'>
+                <option value="1">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_ON</option>
+                <option value="0">COM_JOBGROKLIST_VIEWS_POSTING_TMPL_DEFAULT_XML_OFF</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

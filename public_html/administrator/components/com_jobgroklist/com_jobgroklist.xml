@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.6/component-install.dtd">
+<extension type="component" method="upgrade" version="1.6">
+    <name>com_jobgroklist</name>
+    <creationDate>June 13, 2014, 1:18 am</creationDate>
+    <author>TK Tek, LLC.</author>
+    <authorEmail>info@jobgrok.com</authorEmail>
+    <authorURL>www.jobgrok.com</authorURL>
+    <copyright>Copyright {c} 2008-2014</copyright>
+    <license>GNU Public License Version 2</license>
+    <version>3.1-1.2.57</version>
+    <description><![CDATA[Thank you for installing <a href="http://www.jobgrok.com">JobGrok <em>Listing</em> V3.1-1.2.57</a>.<br /><br />]]></description>>
+    <scriptfile>script.php</scriptfile>
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <filename>index.html</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <filename>jobgroklist.php</filename>
+    </files>
+    <languages folder="site">
+        <language tag="en-GB">en-GB.com_jobgroklist.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_jobgroklist/assets/images/jglist16x16.png">com_jobgroklist</menu>
+        <submenu>
+            <menu alt="Job Grok Listing/Control Panel" img="components/com_jobgroklist/assets/images/panel16x16.png" link="option=com_jobgroklist&amp;controller=panel" view="panel" >COM_jobgroklist_ADMIN_JOBGROK_COM_JOBGROK_CONTROL_PANEL</menu>
+            <menu alt="Job Grok Listing/Postings" img="components/com_jobgroklist/assets/images/posting16x16.png" link="option=com_jobgroklist&amp;controller=posting" view="postings" >COM_jobgroklist_ADMIN_JOBGROK_POSTINGS</menu>
+            <menu alt="Job Grok Listing/Jobs" img="components/com_jobgroklist/assets/images/job16x16.png" link="option=com_jobgroklist&amp;controller=job" view="jobs" >COM_jobgroklist_ADMIN_JOBGROK_JOBS</menu>
+            <menu alt="Job Grok Listing/Companies" img="components/com_jobgroklist/assets/images/company16x16.png" link="option=com_jobgroklist&amp;controller=company" view="companys" >COM_jobgroklist_ADMIN_JOBGROK_COMPANY</menu>
+            <menu alt="Job Grok Listing/Locations" img="components/com_jobgroklist/assets/images/location16x16.png" link="option=com_jobgroklist&amp;controller=location" view="locations" >COM_jobgroklist_ADMIN_JOBGROK_LOCATION</menu>
+            <menu alt="Job Grok Listing/Departments" img="components/com_jobgroklist/assets/images/department16x16.png" link="option=com_jobgroklist&amp;controller=department" view="departments" >COM_jobgroklist_ADMIN_JOBGROK_DEPARTMENT</menu>
+            <menu alt="Job Grok Listing/Categories" img="components/com_jobgroklist/assets/images/category16x16.png" link="option=com_jobgroklist&amp;controller=category" view="categorys" >COM_jobgroklist_ADMIN_JOBGROK_CATEGORY</menu>
+            <menu alt="Job Grok Listing/Job Types" img="components/com_jobgroklist/assets/images/jobtype16x16.png" link="option=com_jobgroklist&amp;controller=jobtype" view="jobtypes" >COM_jobgroklist_ADMIN_JOBGROK_JOB_TYPE</menu>
+            <menu alt="Job Grok Listing/Shifts" img="components/com_jobgroklist/assets/images/shift16x16.png" link="option=com_jobgroklist&amp;controller=shift" view="shifts" >COM_jobgroklist_ADMIN_JOBGROK_SHIFT</menu>
+            <menu alt="Job Grok Listing/Contacts" img="components/com_jobgroklist/assets/images/contact16x16.png" link="option=com_jobgroklist&amp;controller=contact" view="contacts" >COM_jobgroklist_ADMIN_JOBGROK_CONTACT</menu>
+        </submenu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>elements</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>sql</folder>
+            <filename>jobgroklist.php</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <filename>controller.php</filename>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_jobgroklist.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_jobgroklist.sys.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_jobgroklist.menu.ini</language>
+        </languages>
+    </administration>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf.sql</file>
+            <file driver="mysql">sql/install.mysql.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf.sql</file>
+            <file driver="mysql">sql/uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+</extension>

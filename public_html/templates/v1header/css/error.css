@@ -1,0 +1,136 @@
+html {
+	height: 100%;	
+	background: #647077;
+}
+body {
+	background: #647077;
+	margin: 0;	
+	font-family: 'Roboto',sans-serif;
+}
+
+// Logo
+// ----
+/*@font-face {
+	font-family: clapboard;
+	src: url("../fonts/clapboard/clapboard.ttf") format("opentype");
+}*/
+.logo-cont {
+	padding: 25px 30px;
+	margin: 0;
+}
+.logo-cont .logo {
+	text-align: center;
+	padding: 20px 0 0;
+}
+.logo-cont a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px;
+	//letter-spacing: 6px;
+	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
+	//text-transform: uppercase;
+	display: block;
+}
+
+.error-box-image-inner {
+	width: 90px;
+	height: 120px;
+	background: #221E1D;
+	border-radius: 50%;
+	padding: 35px 50px;
+}
+.error-box-image-inner img {
+	max-width: 100%;
+	width: 100%;	
+}
+.error-box-code {
+	font-size: 12em;
+	font-weight: 300;
+	color: #fff;
+	padding: 10px 20px 20px;
+}
+.error-cont-top {
+	background: #899aa5;
+}
+.error-cont-bottom {
+	background: #647077;
+}
+.error-cont-inner {
+	padding: 30px 20px;
+}
+.error-box-msg {
+	font-size: 20px;
+	font-weight: 600;
+	color: #e2e2e2;
+	text-shadow: none;
+	margin: 10px 0 0;
+	padding: 10px 0;
+	width: 300px;
+	text-align: left;
+}
+.error-msg-back {
+	font-size: 15px;
+	font-weight: 300;
+	color: #e2e2e2;
+	margin: 0 0 20px;
+	width: 300px;
+	text-align: left;
+}
+.error-msg-back ul {
+	margin: 0;
+	padding: 0 0 0 18px;	
+}
+.error-msg-back a {
+	color: #eee;	
+}
+.error-msg-back a:hover,
+.error-msg-back a:focus {
+	color: #fff;	
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.error-box-image-inner {
+		width: 45px;
+		height: 60px;
+		padding: 22px 30px;
+	}
+	.error-box-code {
+		font-size: 10em;
+	}
+}
+@media (min-width: 400px) and (max-width: 767px) {
+	.logo-cont {
+		text-align: center;
+		display: inline-block;
+	}
+	.error-box-image-inner {
+		width: 45px;
+		height: 60px;
+		padding: 22px 30px;
+	}
+	.error-box-code {
+		font-size: 8em;
+	}
+}
+@media (max-width: 399px) {
+	.logo-cont {
+		text-align: center;
+		display: inline-block;
+	}
+	.logo-cont a {
+		font-size: 38px;	
+	}
+	.error-box-image-inner {
+		width: 45px;
+		height: 60px;
+		padding: 22px 30px;
+	}
+	.error-box-msg,
+	.error-msg-back {
+		width: 200px;
+	}
+	.error-box-code {
+		font-size: 6em;
+	}
+}

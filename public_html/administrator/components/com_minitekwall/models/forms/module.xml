@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_minitekwall/models/fields"
+	>
+		<field 
+			name="id" 
+			type="text" 
+			default="0"
+			readonly="true" 
+			class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 
+			description="JGLOBAL_FIELD_ID_DESC" 
+		/>
+
+		<field 
+			name="name" 
+			type="text"
+			class="inputbox input-xxlarge input-large-text"
+			size="40" 
+			label="COM_MINITEKWALL_FIELD_NAME_LABEL"
+			description="COM_MINITEKWALL_FIELD_NAME_DESC"
+			required="true" 
+		/>
+		
+		<field 
+			name="instance_id" 
+			type="instances" 
+			label="COM_MINITEKWALL_FIELD_MODULE_INSTANCE_LABEL"
+			description="COM_MINITEKWALL_FIELD_MODULE_INSTANCE_DESC" 
+			class="input-xlarge" 
+			size="30"
+			labelclass="control-label" 
+		/>
+			
+		<field 
+			name="description" 
+			type="textarea" 
+			class="inputbox"
+			label="COM_MINITEKWALL_FIELD_INSTANCE_DESCRIPTION_LABEL" 
+			description="COM_MINITEKWALL_FIELD_INSTANCE_DESCRIPTION_DESC"
+			rows="10"
+			cols="20"
+			filter="raw" 
+		/>
+
+		<field
+			name="published" 
+			type="list"
+			label="JSTATUS" 
+			description="COM_MINITEKWALL_FIELD_STATE_DESC"
+			class="chzn-color-state" 
+			size="1" 
+			default="1"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+		
+		<fields name="module_type">	
+					
+			<field type="spacer" name="hr1" hr="true" />
+			
+			<field type="spacer" name="spacer_module_params" label="COM_MINITEKWALL_FIELD_MODULE_LAYOUT_PARAMS" />
+		
+			<field
+				name="grid" 
+				type="list"
+				label="COM_MINITEKWALL_FIELD_GRID_LABEL" 
+				description="COM_MINITEKWALL_FIELD_GRID_DESC"
+				size="1" 
+				default="98o"
+			>
+				<option value="3a">COM_MINITEKWALL_FIELD_MASONRY_3A</option>
+				<option value="5">COM_MINITEKWALL_FIELD_MASONRY_5</option>
+				<option value="5b">COM_MINITEKWALL_FIELD_MASONRY_5B</option>
+				<option value="98o">COM_MINITEKWALL_FIELD_MASONRY_E</option>
+				<option value="pro" disabled="true">COM_MINITEKWALL_PRO_FEATURES</option>
+			</field>
+			
+			<field 
+				name="mas_cols" 
+				type="integer" 
+				default="4" 
+				label="COM_MINITEKWALL_FIELD_COLUMNS_LABEL" 
+				description="COM_MINITEKWALL_FIELD_COLUMNS_DESC" 
+				first="1" 
+				last="10" 
+				step="1" 
+			/>
+			
+			<field 
+				name="gutter" 
+				type="text"
+				class="inputbox"
+				size="40" 
+				label="COM_MINITEKWALL_FIELD_GUTTER_LABEL"
+				description="COM_MINITEKWALL_FIELD_GUTTER_DESC"
+				default="5"
+			/>
+			
+			<field type="spacer" name="hr6" hr="true" />
+			
+			<field type="spacer" name="spacer_theme_params" label="COM_MINITEKWALL_FIELD_MODULE_THEME_PARAMS" />
+			
+			<field
+				name="themeType" 
+				type="list"
+				label="COM_MINITEKWALL_FIELD_THEME_LABEL" 
+				description="COM_MINITEKWALL_FIELD_THEME_DESC"
+				size="1" 
+				default="2"
+			>
+				<option value="2">COM_MINITEKWALL_MODERN</option>
+				<option value="pro" disabled="true">COM_MINITEKWALL_PRO_FEATURES</option>
+			</field>
+			
+			<field type="spacer" name="hr7" hr="true" />
+			
+			<field type="spacer" name="spacer_detail_box_params" label="COM_MINITEKWALL_FIELD_MODULE_DETAIL_BOX_PARAMS" />
+			
+			<field
+				name="detailBox"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+									
+			<field 
+				name="detailBoxBackground" 
+				type="color" 
+				default="#FFFFFF"
+        		label="COM_MINITEKWALL_FIELD_DETAIL_BOX_BACKGROUND_LABEL"
+        		description="COM_MINITEKWALL_FIELD_DETAIL_BOX_BACKGROUND_DESC" 
+			/>
+			
+			<field 
+				name="detailBoxBackgroundOpacity" 
+				type="text" 
+				default="0.75"
+        		label="COM_MINITEKWALL_FIELD_DETAIL_BOX_BACKGROUND_OPACITY_LABEL"
+        		description="COM_MINITEKWALL_FIELD_DETAIL_BOX_BACKGROUND_OPACITY_DESC" 
+			/>
+			
+			<field
+				name="detailBoxTextColor"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_TEXT_COLOR_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_TEXT_COLOR_DESC">
+					<option value="1">COM_MINITEKWALL_DARK</option>
+					<option value="2">COM_MINITEKWALL_LIGHT</option>
+			</field>
+			
+			<field
+				name="detailBoxTitle"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_TITLE_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_TITLE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="detailBoxCategory"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_CATEGORY_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_CATEGORY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="detailBoxType"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_TYPE_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_TYPE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="detailBoxAuthor"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_AUTHOR_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_AUTHOR_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="detailBoxDate"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_DATE_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_DATE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="detailBoxIntrotext"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_INTROTEXT_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_INTROTEXT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="detailBoxCount"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_DETAIL_BOX_COUNT_LABEL"
+				description="COM_MINITEKWALL_FIELD_DETAIL_BOX_COUNT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field type="spacer" name="hr8" hr="true" />
+			
+			<field type="spacer" name="spacer_hover_box_params" label="COM_MINITEKWALL_FIELD_MODULE_HOVER_BOX_PARAMS" />
+			
+			<field
+				name="hoverBox"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="hoverBoxEffect" 
+				type="list"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_EFFECT_LABEL" 
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_EFFECT_DESC"
+				size="1" 
+				default="1"
+			>
+				<option value="no">COM_MINITEKWALL_SIMPLE_NO_EFFECTS</option>
+				<option value="1">COM_MINITEKWALL_SIMPLE_FADE</option>
+				<option value="pro" disabled="true">COM_MINITEKWALL_PRO_FEATURES</option>
+			</field>
+			
+			<field 
+				name="hoverBoxEffectSpeed" 
+				type="text" 
+				default="0.4"
+        		label="COM_MINITEKWALL_FIELD_HOVER_BOX_EFFECT_SPEED_LABEL"
+        		description="COM_MINITEKWALL_FIELD_HOVER_BOX_EFFECT_SPEED_DESC" 
+			/>
+			
+			<field
+				name="hoverBoxContentEffect" 
+				type="list"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_CONTENT_EFFECT_LABEL" 
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_CONTENT_EFFECT_DESC"
+				size="1" 
+				default="1"
+			>
+				<option value="no-effect">COM_MINITEKWALL_NO_EFFECT</option>
+				<option value="1">COM_MINITEKWALL_SIMPLE_FADE</option>
+				<option value="pro" disabled="true">COM_MINITEKWALL_PRO_FEATURES</option>
+			</field>
+			
+			<field 
+				name="hoverBoxContentEffectSpeed" 
+				type="text" 
+				default="0.4"
+        		label="COM_MINITEKWALL_FIELD_HOVER_BOX_CONTENT_EFFECT_SPEED_LABEL"
+        		description="COM_MINITEKWALL_FIELD_HOVER_BOX_CONTENT_EFFECT_SPEED_DESC" 
+			/>
+			
+			<field
+				name="hoverBoxTheme" 
+				type="list"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_THEME_LABEL" 
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_THEME_DESC"
+				size="1" 
+				default="black"
+			>
+				<option value="black">COM_MINITEKWALL_BLACK</option>
+				<option value="white">COM_MINITEKWALL_WHITE</option>
+				<option value="pro" disabled="true">COM_MINITEKWALL_PRO_FEATURES</option>
+			</field>
+			
+			<field
+				name="hoverBoxTextColor"
+				type="radio"
+				default="2"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_TEXT_COLOR_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_TEXT_COLOR_DESC">
+					<option value="1">COM_MINITEKWALL_DARK</option>
+					<option value="2">COM_MINITEKWALL_LIGHT</option>
+			</field>
+															
+			<field
+				name="hoverBoxTitle"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_TITLE_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_TITLE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+						
+			<field
+				name="hoverBoxCategory"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_CATEGORY_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_CATEGORY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="hoverBoxType"
+				type="radio"
+				default="0"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_TYPE_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_TYPE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+						
+			<field
+				name="hoverBoxAuthor"
+				type="radio"
+				default="0"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_AUTHOR_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_AUTHOR_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="hoverBoxDate"
+				type="radio"
+				default="0"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_DATE_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_DATE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+						
+			<field
+				name="hoverBoxIntrotext"
+				type="radio"
+				default="0"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_INTROTEXT_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_INTROTEXT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+												
+			<field
+				name="hoverBoxLinkButton"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_LINK_BUTTON_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_LINK_BUTTON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+						
+			<field
+				name="hoverBoxFancyButton"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_HOVER_BOX_FANCY_BUTTON_LABEL"
+				description="COM_MINITEKWALL_FIELD_HOVER_BOX_FANCY_BUTTON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+						
+			<field type="spacer" name="hr2" hr="true" />
+			
+			<field type="spacer" name="spacer_pagination_params" label="COM_MINITEKWALL_FIELD_MODULE_PAGINATION_PARAMS" />
+			
+			<field
+				name="pagination" 
+				type="list"
+				label="COM_MINITEKWALL_FIELD_PAGINATION_LABEL" 
+				description="COM_MINITEKWALL_FIELD_PAGINATION_DESC"
+				size="1" 
+				default="0"
+			>
+				<option value="0">JNONE</option>
+				<option value="pro" disabled="true">COM_MINITEKWALL_PRO_FEATURES</option>
+			</field>
+						
+			<field 
+				name="starting_limit" 
+				type="text" 
+				class="inputbox" 
+				size="40" 
+				label="COM_MINITEKWALL_FIELD_STARTING_LIMIT_LABEL"
+				description="COM_MINITEKWALL_FIELD_STARTING_LIMIT_DESC" 
+				default="5"
+				labelclass="control-label" 
+			/>
+															
+			<field type="spacer" name="hr3" hr="true" />
+			
+			<field type="spacer" name="spacer_filter_params" label="COM_MINITEKWALL_FIELD_MODULE_FILTERS_PARAMS" />
+			
+			<field
+				name="filter_type"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_FILTER_TYPE_LABEL"
+				description="COM_MINITEKWALL_FIELD_FILTER_TYPE_DESC">
+					<option value="1">COM_MINITEKWALL_FIELD_INLINE_BUTTONS</option>
+					<option value="2">COM_MINITEKWALL_FIELD_DROPDOWN_LIST</option>
+			</field>
+			
+			<field
+				name="category_filters"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_CATEGORY_FILTERS_LABEL"
+				description="COM_MINITEKWALL_FIELD_CATEGORY_FILTERS_DESC">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+			</field>
+			
+			<field
+				name="tag_filters"
+				type="radio"
+				default="1"
+				class="btn-group"
+				label="COM_MINITEKWALL_FIELD_TAG_FILTERS_LABEL"
+				description="COM_MINITEKWALL_FIELD_TAG_FILTERS_DESC">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+			</field>
+						
+		</fields>
+
+	</fieldset>
+
+</form>

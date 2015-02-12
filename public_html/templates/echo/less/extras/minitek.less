@@ -1,0 +1,984 @@
+/** 
+ *------------------------------------------------------------------------------
+ * Minitek
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C), Minitek. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       Mintek
+ * @Link:         http://www.minitek.gr
+ *------------------------------------------------------------------------------
+ */ 
+ 
+@import "../vars.less";
+
+
+//-----------------------------------------------------------------------------------------------------------
+// Suffixes
+// ----------------------------------------------------------------------------------------------------------
+
+.no-component .t3-mainbody {
+	display:none;
+}
+
+.no-padding {
+	padding: 0 !important;	
+}
+
+.no-margin {
+	margin:0 !important;
+}
+
+.t3-wrapper{
+}
+.mn-module-margin-fix{
+	margin-bottom:0;
+}
+
+//-------------------------------------------------------------------------------------------------------------------------// 
+// Module suffixes
+//-------------------------------------------------------------------------------------------------------------------------// 
+
+.t3-module.padding15 {
+	padding: 15px;	
+}
+
+.t3-module.mod_dark {	
+	background: #000;	
+	.module-title  {
+	}
+	ul {
+		li {
+			a {
+				&:hover, &:focus {
+					background: lighten(#000, 5%);
+				}
+			}
+		}
+	}
+}
+.t3-module.mod_blue {	
+	background: #10849B;
+	.module-title  {
+	}
+	ul {
+		li {
+			a {
+				&:hover, &:focus {
+					background: darken(#10849B, 5%);
+				}
+			}
+		}
+	}
+}
+.t3-module.mod_red {	
+	background: #D96D64;	
+	.module-title  {
+	}
+	ul {
+		li {
+			a {
+				&:hover, &:focus {
+					background: darken(#D96D64, 5%);
+				}
+			}
+		}
+	}
+}
+.t3-module.mod_green {	
+	background: #25B57D;
+	.module-title  {
+	}
+	ul {
+		li {
+			a {
+				&:hover, &:focus {
+					background: darken(#25B57D, 5%);
+				}
+			}
+		}
+	}
+}
+.t3-module.mod_orange {	
+	background: #e89146;	
+	.module-title  {
+	}
+	ul {
+		li {
+			a {
+				&:hover, &:focus {
+					background: darken(#e89146, 5%);
+				}
+			}
+		}
+	}
+}
+.t3-module.mod_purple {	
+	background: #B376A3;	
+	.module-title  {
+	}
+	ul {
+		li {
+			a {
+				&:hover, &:focus {
+					background: darken(#B376A3, 5%);
+				}
+			}
+		}
+	}
+}
+
+.t3-module.mod_grey {	
+	background: #8A8C89;	
+	.module-title  {
+	}
+	ul {
+		li {
+			a {
+				&:hover, &:focus {
+					background: darken(#8A8C89, 5%);
+				}
+			}
+		}
+	}
+}
+
+.t3-module.mod_brown {	
+	background: #a07d52;	
+	.module-title  {
+	}
+	ul {
+		li {
+			a {
+				&:hover, &:focus {
+					background: darken(#a07d52, 5%);
+				}
+			}
+		}
+	}
+}
+
+.mod_dark,
+.mod_blue,
+.mod_red,
+.mod_green,
+.mod_orange,
+.mod_purple,
+.mod_grey,
+.mod_brown {
+	a {
+		color: #eee;
+	}
+	p, span {
+		color: #fff;	
+	}
+	div.k2ItemsBlock ul li div.moduleItemIntrotext {
+		color: #eee;	
+	}
+	.k2LatestCommentsBlock {
+		a {
+			span {
+				color: @link-color;	
+			}
+		}
+	}
+}
+
+.t3-module.formatModule {
+	padding: 10px;
+	background: none; /*#f5f5f5;*/
+	margin-bottom: @line-height-computed*3/2;
+	h3.module-title {
+		padding: 5px 0; /*10px*/
+		background: none; /*#fff*/
+		font-size: @font-size-h3;
+		font-weight: 400;
+		margin: 0 0 15px;
+		border-width: 0; /*border:0;*/
+		text-align: left;
+	}
+	.module-ct {
+		padding: 5px;	
+	}
+}
+
+.t3-module.mod_dark.formatModule {
+	background: #333; 
+	h3.module-title {
+		span {
+			color: #fff; /*#333*/
+		}
+	}
+}
+.t3-module.mod_blue.formatModule {
+	background: #10849B; 
+	h3.module-title {
+		span {
+			color: #fff;
+			border-color: lighten(#10849B,15%);
+		}
+	}
+}
+.t3-module.mod_red.formatModule {
+	background: #D96D64; 
+	h3.module-title {
+		span {
+			color: #fff;
+			border-color: lighten(#D96D64,15%);
+		}
+	}
+}
+.t3-module.mod_purple.formatModule {
+	background: #B376A3; 
+	h3.module-title {
+		span {
+			color: #fff;
+			border-color: lighten(#B376A3,15%);
+		}
+	}
+}
+.t3-module.mod_orange.formatModule {
+	background: #e89146; 
+	h3.module-title {
+		span {
+			color: #fff;
+			border-color: lighten(#e89146,15%);
+		}
+	}
+}
+.t3-module.mod_green.formatModule {
+	background: #25B57D; 
+	h3.module-title {
+		span {
+			color: #fff;
+			border-color: lighten(#25B57D,15%);
+		}
+	}
+} 
+.t3-module.mod_grey.formatModule {
+	background: #8A8C89; 
+	h3.module-title {
+		span {
+			color: #fff;
+			border-color: lighten(#8A8C89,15%);
+		}
+	}
+}
+.t3-module.mod_brown.formatModule {
+	background: #a07d52; 
+	h3.module-title {
+		span {
+			color: #fff;
+			border-color: lighten(#a07d52,15%);
+		}
+	}
+}
+
+//-----------------------------------------------------------------------------------------------------------
+// Framework stuff
+//-----------------------------------------------------------------------------------------------------------
+
+//-------------------
+// Typo
+// ------------------
+
+a {
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;	
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		text-decoration: none;	
+	}
+}
+a, a:hover, a:focus {
+	outline: none;
+}
+
+h1, h2, h3 {
+	margin-top: 0;	
+}
+
+.page-header {
+	border: 0;	
+}
+
+.alert-info {
+	border-color:transparent;
+}
+select:focus {
+	border-color:@link-color;
+	box-shadow:none;	
+}
+mark{
+	background:@theme-color;
+	padding:6px 12px;
+	color:#fff;
+}
+
+//----------------------
+// Forms
+// ---------------------
+
+.form-horizontal {
+	.form-group {
+		margin-left: 0;
+		margin-right: 0;	
+	}
+}
+
+.reset .form-validate p, 
+.remind .form-validate p {
+	border: 0;	
+}
+
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.inputbox:focus {
+	border-color: @theme-color;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow:none;
+}
+.registration{
+	.form-actions{
+		background-color:@gray-bg;
+	}
+}
+//----------------------
+// Main Body
+// ---------------------
+
+.t3-mainbody {
+	min-height: 400px;
+}
+
+//----------------------
+// iframe wrapper
+//----------------------
+
+.contentpane {
+	iframe {
+		border: 0;	
+		background: #ffffff;
+	}
+}
+//----------------------
+// Buttons
+// ---------------------
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus{
+	outline:none;
+}
+//----------------------
+// Pagination
+//----------------------
+
+.pagenav {
+	li {
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.pager {
+	li {
+		margin: 0 5px;	
+	}
+	li > a, 
+	.pager li > span {
+		border-radius: @border-radius-base;
+	}
+}
+
+//----------------------
+// Breadcrumbs
+//----------------------
+
+.t3-navhelper {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	.breadcrumb {
+		padding: (@t3-global-padding - 5) 0;
+		background: none;	
+	}
+}
+
+//----------------------
+// Nav Tabs
+//----------------------
+
+.nav-tabs {
+	margin: 0 0 30px;	
+}
+
+
+
+//----------------------
+// Tables
+//----------------------
+
+table {
+	th {
+		background: @link-color;
+		font-weight: 400;	
+		text-transform: uppercase;
+		padding: 8px;
+		border: 0 !important;
+		color: #fff;
+		a {
+			color: #fff;	
+			&:hover, &:focus {
+				color: #fff;	
+			}
+			img {
+				margin: 0 0 0 10px;	
+			}
+		}
+	}
+	td {
+		padding: 8px;	
+		a {
+			font-weight: normal;	
+		}
+	}
+	ul.actions {
+		padding: 0;
+		li {
+			list-style: none;
+		}
+	}
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+		background-color: transparent;
+}
+.responsive-utilities th small {
+	color: #eee;
+	text-transform: none;	
+}
+.responsive-utilities td.is-visible {
+	background-color: @light-grey-bg !important;
+}
+
+//----------------------
+// Language Switcher
+//----------------------
+
+.col-mn-languageswitcher {
+	float: right;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+}
+.languageswitcherload {
+	width: auto;	
+}
+
+//----------------------
+// Banner Module
+//----------------------
+
+.bannergroup {
+	.banneritem {
+		img {
+			height: auto;
+			max-width: 100%;	
+			width: 100%;
+		}
+	}
+}
+
+
+//-----------------------------------------------------------------------------------------------------------
+// Content
+//-----------------------------------------------------------------------------------------------------------
+
+.item-page {
+	.article-aside {
+		.article-info {
+			font-size: 12px;
+			font-weight: 400;
+			span {
+				font-weight: 300;	
+			}
+			a {
+				font-weight: 300;
+				text-decoration: none;
+			}
+		}
+	}
+	
+	.article-intro {
+		line-height: 1.8;
+		.pull-left {
+			margin: 0 0 15px;
+			img {
+				width: 100%;	
+			}
+		}
+	}	
+	
+	.item-image {
+		width: 100%;
+		img {
+			width: 100%;	
+		}
+	}
+	
+	.article-content {
+		line-height: 1.8;	
+	}
+}
+
+.archive {
+	.item-title {
+		font-weight: 400;
+	@media screen and (max-width: @screen-sm) {
+	  font-size: 22px !important;
+	  }
+	}
+}
+	.article-title{
+		@media screen and (max-width: @screen-sm) {
+		  font-size: 22px !important;
+		}
+	}
+.item-image {
+	padding-bottom:20px;
+	img {
+		width:100%;
+	}
+}
+article aside .btn-group > .dropdown-toggle,
+article aside .btn-group > .dropdown-toggle:hover,
+article aside .btn-group > .dropdown-toggle:active,
+article aside .btn-group > .dropdown-toggle:focus {
+	padding: 2px 5px;
+	border: 1px solid #ccc;
+	color: #000;
+}
+.icon-cog:before{
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	content: "\f013";
+}
+
+.readmore{
+	.btn-default{
+		&:hover,
+		&:focus,
+		&:active {
+			background:@gray-bg;
+			color:#fff;
+		}
+	}
+}
+
+//----------------------
+// Page breaks Pagination
+//----------------------
+
+.article-content .pagination {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		> li {
+			margin: 0 8px 0 0;
+			padding: 0 !important;
+			float: left;
+			border: 0 !important;
+		}
+		li > a {
+			padding: (@t3-global-padding / 2) @t3-global-padding !important;
+			line-height: normal;
+			border: 1px solid @pagination-border !important;
+			border-radius: @border-radius-base;
+			&:hover, &:active, &:focus {
+		 		background-color: @pagination-hover-bg;
+			}
+	  	}
+	}
+}
+
+//----------------------
+// Articles pagination
+//----------------------
+
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus {
+	background-color: @theme-color;
+	border-color: @theme-color;	
+}
+
+.pagination {
+	.counter {
+		border: 0;	
+	}
+}
+
+
+//----------------------
+// Various Joomla! elements
+//----------------------
+
+.filters {
+	margin: 10px 0 20px;
+	width: auto;
+	.filter-search {
+		width: auto;
+	}	
+	.inputbox, .input {
+		float: left;	
+		margin: 0 10px 10px 0;
+	}
+	label {
+		font-weight: 400;
+		line-height: 35px;
+		margin: 0;
+	}
+	.btn {
+		vertical-align: top;	
+	}
+}
+
+.pagenavcounter {
+	font-weight: 300;
+}
+
+.search {
+	form {
+	}
+}
+
+.panel-title {
+	> a {
+		color: @link-color;
+		&:hover, &:focus {
+			color: @link-hover-color;
+		}
+	}
+}
+
+//----------------------
+// Various Joomla! lists
+//----------------------
+
+.list {
+	
+	clear:both;
+	
+	.list-title {
+		a {
+			font-weight: 400;
+			text-decoration: none;
+			margin: 0 0 10px;
+			display: block;
+		}	
+	}
+	
+	a {
+		text-decoration: none;	
+	}
+	
+}
+
+.categories-list {
+	
+	ul {
+		padding: 0;
+		li { 
+			border-bottom: 1px solid #e5e5e5;
+			list-style: none;
+			.item-title {
+				a {
+					display: block;
+					font-size: 18px;
+					font-weight: 500;
+					padding: @padding-large-vertical 0;
+				}
+			}
+		}
+		li.last {
+			border: 0;
+		}
+	}
+	.category-item {
+		border-bottom: 1px solid #e5e5e5;
+		h3 {
+			padding: @padding-large-vertical 0; 
+		}
+	}
+	.category-item.last {
+		border: 0;
+	}
+	
+}
+
+.list-striped {
+	
+	li {
+		
+		strong {
+			margin: 0 0 10px;
+			display: block;
+			font-weight: 400;
+			a {
+				text-decoration: none;
+			}
+		}
+		
+		.badge-info {
+			background-color: @link-color;	
+		}
+		
+	}
+	
+}
+
+//-----------------------------------------------------------------------------------------------------------
+// Modules
+// ----------------------------------------------------------------------------------------------------------
+
+
+//----------------------
+// Categories Module
+//----------------------
+
+.categories-module, ul.categories-module,
+.category-module, ul.category-module {
+	li {
+		padding: 0;
+		border: 0;
+		a {
+			padding: 8px 0;	
+			text-decoration: none;
+			display: block;
+			font-size: 16px;
+			line-height: @line-height-base;
+			font-weight: 300;
+			color:@text-color;
+			&:hover, 
+			&:focus {
+				color: #fff;
+				background: @link-color;
+				padding: 8px 10px;	
+			}
+		}
+	}
+}
+
+//----------------------
+// Module Positions Page
+//----------------------
+
+.bordered {
+	padding: 5px;
+	p {
+		border-radius: @border-radius-base;
+		border: 1px solid #ccc;	
+		padding: 10px;
+		background: #fff;
+	}
+}
+
+
+//-----------------------------------------------------------------------------------------------------------
+// Mega Menu
+// ----------------------------------------------------------------------------------------------------------
+
+.t3-megamenu {
+	.navbar-nav > li {
+		text-transform:uppercase;
+	}
+	
+	.dropdown-menu{
+		//background:@navbar-default-link-hover-bg;
+		box-shadow:none;
+		margin:0;
+		padding:0;
+		border-radius:@border-radius-base;
+		//border:0;
+		
+		li{
+			text-align:left;
+			text-transform:uppercase;
+			font-style:italic;
+			font-size:13px;
+			//border-bottom:1px solid ;
+			a{
+				padding:13px !important;
+			}
+			+ li {
+			  border-top: 1px solid #e5e5e5;	
+			}
+		}
+	}
+	
+	.mega-col-nav{
+		padding:0;
+		.mega-inner{
+			 padding: 0;
+			 li{
+				 a{
+					 color:#999;
+					 &:hover,
+					 &:focus{
+						 background:#000;
+						 color:#fff;
+					 }
+				 }
+			 }
+			 .current.active {
+				 a{
+					 color:#333;
+					 &:hover,
+					 &:focus{
+						 color:#fff;
+					 }
+				 }
+			 }
+		}
+		.dropdown-submenu.open > a {
+			background:#000;
+			color:#fff;
+		}
+	}
+	.mega-nav img {
+		margin: -1px 10px 0 0;
+	}
+	
+	.nav > .dropdown > .dropdown-toggle .caret{
+		transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+	}
+	.dropdown-submenu:hover > a:after{
+		border-left-color:#fff;
+	}
+}
+
+.mega-group{
+	.mega-col-nav{
+		padding:0 @grid-gutter-width / 2;
+	}	
+	.mega-nav > li.active a {
+		//color:#999 !important;
+		&:hover,
+		&:focus{
+			color:#fff !important;
+		}
+	}
+}
+/* Fixed Mainnav */
+@media (min-width: @screen-md-min) {
+	.t3-mainnav.fixed_mainnav {
+		width: 100%;
+		background: rgba(255,255,255,0.96);
+		box-shadow: 0 2px 10px rgba(0,0,0,0.1);	
+		position: fixed;
+		top: 0;
+		z-index: 9999;
+		.t3-navbar {
+			border: 0;
+			margin: 0;	
+		}
+	}
+	.fixed_mainnav #t3-header {
+		margin-bottom: 83px;	
+	}
+	
+}
+
+/* Scroll to top link */
+
+.scroll-top {
+	background-color: @theme-color;
+	z-index: 9999;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: -100px;
+	right: 25px;
+	cursor: pointer;
+	-webkit-transition: all .7s ease-in-out;
+	-moz-transition: all .7s ease-in-out;
+	-o-transition: all .7s ease-in-out;
+	-ms-transition: all .7s ease-in-out;
+	transition: all .7s ease-in-out;
+	overflow: auto;
+	color:#fff;
+	text-align:center;
+	font-size:25px;
+	i{
+		width:40px;
+		height:40px;
+		line-height:40px;
+	}
+	&:hover,
+	&:focus{
+		background-color: darken(@theme-color, 10);	
+	-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+	}
+
+}
+
+.logo-nav{
+	display:none;
+	padding-left:0;
+}
+.fixed_mainnav{
+	.logo-nav{
+		display:block;
+	}
+	.mn-logo-text{
+		font-size:18px;
+	}
+	.mn-logo-img{
+		img{
+			width:28px;
+		}
+	}
+	.navbar{
+		border:0;
+	}
+}
+//-----------------------------------------------------------------------------------------------------------
+// MN Section
+//-----------------------------------------------------------------------------------------------------------
+
+.mn-section {
+	overflow: hidden;	
+}

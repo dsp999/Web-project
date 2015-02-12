@@ -1,0 +1,17 @@
+DROP TABLE #__tst_jglist_static_category;
+DROP TABLE #__tst_jglist_static_country;
+DROP TABLE #__tst_jglist_static_companysize;
+DROP TABLE #__tst_jglist_static_companyrevenue;
+DROP TABLE #__tst_jglist_static_jobtype;
+DROP TABLE #__tst_jglist_static_education;
+DROP TABLE #__tst_jglist_static_payrange;
+DROP TABLE IF EXISTS  #__tst_jglist_categories;
+DROP TABLE IF EXISTS  #__tst_jglist_companies;
+DROP TABLE IF EXISTS  #__tst_jglist_departments;
+DROP TABLE IF EXISTS  #__tst_jglist_locations;
+DROP TABLE IF EXISTS  #__tst_jglist_jobtypes;
+DROP TABLE IF EXISTS  #__tst_jglist_contacts;
+DROP TABLE IF EXISTS  #__tst_jglist_jobs;
+DROP TABLE IF EXISTS  #__tst_jglist_postings;
+DROP TABLE IF EXISTS  #__tst_jglist_shifts;
+DROP TABLE IF EXISTS  #__tst_jglist_values;

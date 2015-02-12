@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+
+	<layout title="COM_MINITEKWALL_VIEW_WALL_TITLE_LABEL">
+		<message>
+			<![CDATA[COM_MINITEKWALL_VIEW_WALL_TITLE_DESC]]>
+		</message>
+	</layout>
+	
+	<state>
+	
+		<name>COM_MINITEKWALL_VIEW_RESULTS_TITLE_LABEL</name>
+		<description>COM_MINITEKWALL_VIEW_RESULTS_TITLE_DESC</description>
+		
+		<fields name="params">
+				
+			<fieldset 
+				name="basic_settings" 
+				addfieldpath="/administrator/components/com_minitekwall/models/fields"
+				label="COM_MINITEKWALL_BASIC_SETTINGS"
+			>
+								
+				<field 
+					name="module_id" 
+					type="moduleinstance" 
+					label="COM_MINITEKWALL_FIELD_MENU_ITEM_MODULE_LABEL"
+					description="COM_MINITEKWALL_FIELD_MENU_ITEM_MODULE_DESC" 
+					class="input-xlarge" 
+					size="30"
+					required="true" 
+					labelclass="control-label" 
+				/>
+								
+			</fieldset>
+			
+		</fields>
+		
+	</state>
+	
+</metadata>

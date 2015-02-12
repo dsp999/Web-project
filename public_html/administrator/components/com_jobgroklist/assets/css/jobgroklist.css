@@ -1,0 +1,50 @@
+.icon-48-application { background-image:url(../images/application48x48.png); }
+.icon-48-applications { background-image:url(../images/jga48x48.png); }
+.icon-48-applications h2 { margin-left: 50px !important; }
+.icon-48-applicationstatusstatic { background-image:url(../images/applicationstatusstatic48x48.png); }
+.icon-48-eeo { background-image:url(../images/eeo48x48.png); }
+.icon-48-category { background-image:url(../images/category48x48.png); }
+.icon-48-categorystatic { background-image:url(../images/categorystatic48x48.png); }
+.icon-48-company { background-image:url(../images/company48x48.png); }
+.icon-48-companysizestatic { background-image:url(../images/companysizestatic48x48.png); }
+.icon-48-companyrevenuestatic { background-image:url(../images/companyrevenuestatic48x48.png); }
+.icon-48-contact { background-image:url(../images/contact48x48.png) !important; }
+.icon-48-countrystatic { background-image:url(../images/countrystatic48x48.png); }
+.icon-48-department { background-image:url(../images/department48x48.png); }
+.icon-48-email { background-image:url(../images/email48x48.png); }
+.icon-48-emailrecipient { background-image:url(../images/emailrecipient48x48.png); }
+.icon-48-job { background-image:url(../images/job48x48.png); }
+.icon-48-jobtype { background-image:url(../images/jobtype48x48.png); }
+.icon-48-jobtypestatic { background-image:url(../images/jobtypestatic48x48.png); }
+.icon-48-location { background-image:url(../images/location48x48.png); }
+.icon-48-countrystatic { background-image:url(../images/countrystatic48x48.png); }
+.icon-48-referralstatic { background-image:url(../images/referralstatic48x48.png); }
+.icon-48-panel { background-image:url(../images/jgp48x48.png); }
+.icon-48-panel h2 { margin-left: 50px !important; }
+.icon-48-jgb-panel { background-image: url(../images/jgb48x48.png); }
+.icon-48-jgb-panel h2 { margin-left: 50px !important; }
+.icon-48-posting { background-image:url(../images/posting48x48.png); }
+.icon-48-postings { background-image:url(../images/jgl48x48.png); }
+.icon-48-postings h2 { margin-left: 50px !important; }
+.icon-48-shift { background-image:url(../images/shift48x48.png); }
+.icon-48-cover { background-image:url(../images/cover48x48.png); }
+.icon-48-upload { background-image:url(../images/upload48x48.png); }
+.icon-48-submission { background-image:url(../images/submission48x48.png); }
+.icon-48-educationstatic { background-image:url(../images/educationstatic48x48.png); }
+.icon-32-jobgrokappimport { background-image:url(../images/jobgrokappimport32x32.png); }
+.icon-32-jobgroklistimport { background-image:url(../images/jobgroklistimport32x32.png); }
+.icon-32-jobgrokimport_disabled { background-image:url(../images/jobgrokimport_disabled32x32.png); }
+.icon-32-static { background-image:url(../images/static32x32.png); }
+
+#cpanel div.icon a {
+background-color: #fff;
+background-position: -30px;
+display: block;
+float: left;
+height: 97px;
+width: 108px;
+color: #565656;
+vertical-align: middle;
+text-decoration: none;
+text-align: center;
+}

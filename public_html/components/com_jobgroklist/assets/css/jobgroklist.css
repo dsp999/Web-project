@@ -1,0 +1,516 @@
+.jg_ea
+{
+        width: 95%;
+}
+.jg_ea div
+{
+    margin: 0px;
+}
+.jg_ea fieldset
+{
+        border: 1px solid silver;
+        background: none;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+.jg_ea legend
+{
+        border: 0px solid silver;
+        background-color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: bold;
+		font-size: 12px;
+}
+.jg_ea div.jg_ea_field
+{
+	float: left;
+	width: 100%;
+	margin-bottom: 2px;
+}
+.jg_ea div.jg_ea_field div
+{
+	float: left;
+	width: 20%;
+}
+.jg_ea div.jg_ea_field div.sub_title
+{
+	float: left;
+	width: 100% ;
+	font-weight: bold;
+	margin-top: 25px;
+}
+.jg_ea div.jg_ea_field input
+{
+	float: left;
+	width: 75%;
+}
+.jg_ea div.jg_ea_field input.submitbutton
+{
+	width: auto;
+}
+.jg_ea div.jg_ea_field textarea
+{
+	float: left;
+	width: 75%;
+}
+.jg_ea div.jg_ea_field label
+{
+        width: 20%;
+}
+.jg_ea div.jg_ea_field input.inputbox
+{
+	float: left;
+	width: auto;
+}
+.jg_ea div.jg_ea_field div.input_text
+{
+	float: left;
+	width: auto;
+	margin-right: 10px;
+}
+.jg_ea div.jg_ea_field div.number
+{
+	float: left;
+	width: 5%;
+}
+.jg_ea div.jg_ea_field div.question
+{
+	float: left;
+	width: 75%;
+}
+.jg_ea div.jg_ea_field div.question_row
+{
+	margin-top: 10px;
+	width:100%;
+}
+.jg_ea div.jg_ea_field div.followup
+{
+	float: left;
+	width: 75%;
+}
+.jg_ea div.jg_ea_field div.followup_row
+{
+	width: 100%;
+}
+.jg_ea div.jg_ea_field div.agreement
+{
+	float: left;
+	width: 93%;
+}
+.jg_ea div.jg_ea_field div.input_row
+{
+	width: 100%;
+}
+.jg_ea div.jg_ea_field div.options
+{
+	float: right;
+	width: 18%;
+}
+.jg_ea fieldset#intro
+{
+        background-color: #f6f6f6;
+		margin-bottom: 3px;
+}
+.jg_ea fieldset div span
+{
+        width: 100px;
+}
+/* Tabs */
+.jg_ea  dl.tabs dt
+{
+	display: inline;
+}
+.jg_ea dl.tabs dt h4
+{
+	display: block;
+	width: 100%;
+}
+.jg_ea  dl.tabs dt span
+{
+	float: left;		
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	margin-right: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.jg_ea dl.tabs dt.closed span
+{
+	background-color: #cccccc;
+}
+.jg_ea dl.tabs dt.open span
+{
+	background-color: #ffffff;
+	cursor: default;
+}
+/* Panels */
+.jg_ea .jpane-toggler-down { border-bottom: 1px solid #cccccc; }
+.jg_ea .pane-sliders .title { cursor: pointer; margin: 0px; padding: 2px; color: #666666; }
+.jg_ea .pane-sliders .panel { border: 1px solid #cccccc; margin-bottom: 3px; padding-bottom: 0px; }
+.jg_ea .pane-sliders .panel h3 { background: #f6f6f6 repeat scroll 0px 0px; color: #666666; font-size: 13px; }
+.jg_ea .pane-sliders .panel h3.jpane-toggler span { background-image: url(../images/arrow_right.gif) no-repeat 5px 5px; }
+.jg_ea .pane-sliders .panel h3.jpane-toggler-down span { background-image: url(../images/arrow_down.gif) no-repeat 5px 5px; }
+.jg_ea .pane-sliders .panel h4 { font-size: 13px; font-style: italic; margin-bottom: 10px; margin-top: 10px; }
+.jg_ea .pane-sliders .panel span { padding-left: 20px; }
+.jg_ea .jpane-toggler-down span { padding-left: 20px; }
+.jg_ea div.pane-sliders div.jg_ea_field { padding-left: 10px; }
+
+/* Employment Listing */
+.jg_el
+{
+	width: 95%;
+}
+.jg_el div#jg_el_criteria
+{
+	background-color: #f6f6f6;
+	margin-bottom: 3px;	
+	padding: 5px;
+	border: 1px solid silver;
+}
+.jg_el div.mini_header
+{
+	margin-right: 10px;
+	font-weight: bold;
+	font-variant: small-caps;
+	width: 100%;
+}
+.jg_el div#jg_el_criteria div.jg_el_filters
+{
+	width: 100%;
+	margin-bottom: 3px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.jg_el div#jg_el_criteria div.jg_el_filters div.input_textbox
+{
+        padding-top: 5px;
+}
+.jg_el div#jg_el_criteria div.jg_el_filters div.dropdown_filter
+{
+	float: left;
+	margin-bottom: 3px;
+	margin-right: 10px;
+}
+.jg_el div#jg_el_criteria div.jg_el_filters div.checkbox_filter_background
+{
+    background-color: white;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+.jg_el div#jg_el_criteria div.jg_el_filters div.checkbox_filter
+{
+    float: left;
+    border: 1px solid silver;
+    padding: 10px;
+    height: 50px;
+    overflow-y: scroll;
+}
+.jg_el div#jg_el_criteria div.jg_el_filters div.checkbox_filter_header
+{
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    text-align: center;
+    font-weight: bold;
+}
+
+.jg_el div#jg_el_criteria div#jg_el_sort
+{
+	width: 100%;
+	margin-bottom: 3px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.jg_el div#jg_el_criteria div#jg_el_sort div.sort_order
+{
+	float: left;
+	margin-bottom: 3px;
+	margin-right: 10px;
+        font-weight: bold;
+}
+/* Block Listing */
+.jg_el div#jg_el_listing_block1 div.jg_row0,
+.jg_el div#jg_el_listing_block1 div.jg_row1
+{
+	width: 100%;
+	padding: 5px;
+	border: 1px solid silver;
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+.jg_el div#jg_el_listing_block1 div.jg_jobtitle
+{
+	width: 33%;
+	float: left;
+	font-variant: small-caps;
+}
+.jg_el div#jg_el_listing_block1 div.jg_company
+{
+	width: 33%;
+	float: left;
+	text-align: center;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+.jg_el div#jg_el_listing_block1 div.jg_location
+{
+	width: 33%;
+	float: right;
+	text-align: right;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+.jg_el div#jg_el_listing_block1 div.jg_posting_date
+{
+	width: 100%;
+	text-align: center;
+	float: left;
+	font-style: italic;
+	color: silver;
+}
+.jg_el div#jg_el_listing_block1 div.jg_summary
+{
+	width: 100%;
+	border-bottom: 1px dotted silver;
+	float: left;
+}
+.jg_el div#jg_el_listing_block1 div.jg_contact
+{
+	width: 33%;
+	float: left;
+	font-style: italic;
+	color: silver;
+}
+.jg_el div#jg_el_listing_block1 div.jg_closing_date
+{
+	width: 33%;
+	float: left;
+	text-align: center;
+	font-style: italic;
+	color: silver;
+}
+.jg_el div#jg_el_listing_block1 div.jg_readmore
+{
+	width: 33%;
+	float: right;
+	text-align: right;
+	font-style: italic;
+}
+.jg_el div#jg_el_listing_block2 div.jg_row0,
+.jg_el div#jg_el_listing_block2 div.jg_row1
+{
+	width: 45%;
+	padding: 5px;
+	border: 1px solid silver;
+	overflow: hidden;
+	margin-bottom: 3px;
+	margin-left: 3px;
+}
+.jg_el div#jg_el_listing_single tr.jg_row0:hover,
+.jg_el div#jg_el_listing_single tr.jg_row1:hover,
+.jg_el div#jg_el_listing_block1 div.jg_row0:hover,
+.jg_el div#jg_el_listing_block1 div.jg_row1:hover,
+.jg_el div#jg_el_listing_block2 div.jg_row0:hover,
+.jg_el div#jg_el_listing_block2 div.jg_row1:hover
+{
+	background-color: #e6e6e6;
+	cursor: pointer;
+}
+.jg_el div#jg_el_listing_block2 div.jg_row0
+{
+	float: left;
+}
+.jg_el div#jg_el_listing_block2 div.jg_row1
+{
+	float: right;
+}
+.jg_el div#jg_el_listing_block2 div.jg_jobtitle
+{
+	width: 100%;
+	color: #f6f6f6;
+	background-color: gray;
+	text-align: center;
+}
+.jg_el div#jg_el_listing_block2 div.jg_jobtitle a
+{
+	color: #f6f6f6;
+}
+.jg_el div#jg_el_listing_block2 div.jg_company
+{
+	width: 49%;
+	float: left;
+	font-style: italic;
+	font-weight: bold;
+}
+.jg_el div#jg_el_listing_block2 div.jg_location
+{
+	width: 49%;
+	float: right;
+	text-align: right;
+	font-style: italic;
+}
+.jg_el div#jg_el_listing_block2 div.jg_posting_date
+{
+	float: right;
+	width: 33%;
+	font-size: 10px;
+	text-align: right;
+}
+.jg_el div#jg_el_listing_block2 div.jg_summary
+{
+	width: 66%;
+	float: left;
+	max-height: 58px;
+	min-height: 58px;
+	overflow: hidden;
+	border: 1px dotted silver;
+}
+.jg_el div#jg_el_listing_block2 div.jg_contact
+{
+	width: 33%;
+	font-size: 10px;
+	float: right;
+	text-align: right;
+}
+.jg_el div#jg_el_listing_block2 div.jg_closing_date
+{
+	width: 33%;
+	font-size: 10px;
+	float: right;
+	text-align: right;
+}
+.jg_el div#jg_el_listing_block2 div.jg_readmore
+{
+	display: none;
+	visibility: hidden;
+}
+.jg_el div#jg_el_listing_block3 div.jg_row0,
+.jg_el div#jg_el_listing_block3 div.jg_row1,
+.jg_el div#jg_el_listing_block3 div.jg_row2
+{
+	width: 30%;
+	padding: 5px;
+	border: 1px solid silver;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.jg_el div#jg_el_listing_block3 div.jg_row0:hover,
+.jg_el div#jg_el_listing_block3 div.jg_row1:hover,
+.jg_el div#jg_el_listing_block3 div.jg_row2:hover
+{
+	background-color: #e6e6e6;
+	cursor: pointer;
+}
+.jg_el div#jg_el_listing_block3 div.jg_row0
+{
+	float: left;
+}
+.jg_el div#jg_el_listing_block3 div.jg_row1
+{
+	float: left;
+	margin-left: 5px;
+}
+.jg_el div#jg_el_listing_block3 div.jg_row2
+{
+	float: left;
+	margin-left: 5px;
+}
+.jg_el div#jg_el_listing_block3 div.jg_jobtitle
+{
+	width: 100%;
+	background-color: gray;
+	color: #f6f6f6;
+	text-align: center;
+}
+.jg_el div#jg_el_listing_block1 div.jg_blockheader
+{
+	width: 100%;
+	background-color: gray;
+	color: #f6f6f6;
+}
+.jg_el div#jg_el_listing_block3 div.jg_jobtitle a
+{
+	color: #f6f6f6;
+}
+.jg_el div#jg_el_listing_block3 div.jg_company,
+.jg_el div#jg_el_listing_block3 div.jg_location,
+.jg_el div#jg_el_listing_block3 div.jg_posting_date
+{
+	text-align: center;
+	font-style: italic;
+}
+.jg_el div#jg_el_listing_block3 div.jg_posting_date
+{
+	border-top: 1px dotted silver;
+}
+.jg_el div#jg_el_listing_block3 div.jg_summary,
+.jg_el div#jg_el_listing_block3 div.jg_contact,
+.jg_el div#jg_el_listing_block3 div.jg_closing_date,
+.jg_el div#jg_el_listing_block3 div.jg_readmore
+{
+	display: none;
+	visibility: hidden;
+}
+.jg_el div#jg_el_listing_block3 div.jg_posting_date
+{
+	border-bottom: 1px dotted silver;
+}
+/* Single Row Listing */
+.jg_el div#jg_el_listing_single table
+{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom:5px;
+}
+.jg_el div#jg_el_listing_single table th
+{
+	background-color: transparent;
+	color: gray;
+	border-bottom: 3px double silver;
+}
+.jg_el div#jg_el_listing_single table tr td
+{
+	padding-left: 5px;
+}
+.jg_el div#jg_el_listing_single table tr.jg_row2
+{
+	border-bottom: 3px double silver;
+}
+.jg_el div#jg_el_listing_single table tr.jg_row2 th
+{
+	background-color: transparent;
+}
+.jg_el .jg_jobtitle a
+{
+	text-decoration: none;
+	font-weight: bold;
+}
+.jg_el .jg_jobtitle a:hover
+{
+	text-decoration: none;
+}
+.jg_el .counter
+{
+	float:right;
+}
+.jg_el div#no_postings
+{
+	padding-top: 20px;
+	margin-top: 10px; 
+	padding-bottom: 20px; 
+	margin-bottom: 10px; 
+	border-top: 3px double silver; 
+	border-bottom: 3px double silver; 
+	text-align:center;
+}
+
+.jg_static fieldset { border: 1px solid silver; padding: 10px; }
+.jg_static legend { font-weight: bold; }
+.jg_static span { display: inline-block; }
+
+img#captch_img { margin-bottom: -6px; }
+

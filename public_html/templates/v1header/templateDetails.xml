@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>v1header</name>
+	<version>3.0.1</version>
+	<creationDate>22 September 2014</creationDate>
+	<author>minitek.gr</author>
+	<authorEmail>info@minitek.gr</authorEmail>
+	<authorUrl>http://www.minitek.gr</authorUrl>
+	<copyright>Copyright (C), Minitek. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>
+		base-bs3
+		</base>
+	</t3>
+	<description>
+		<![CDATA[<div align="center">
+			<div class="alert alert-success" style="background-color:#edf4ff;border-color:#a0c7ff;color: #468847;padding: 10px;">
+			<h4><a href="http://www.minitek.gr/" title="">Home</a> | <a href="http://demo.minitek.gr/joomla-templates/echo" title="">Demo</a> | <a href="http://www.minitek.gr/support/documentation/joomla-templates" title="">Documentation</a></h4>
+			<p> </p>
+			<span style="color:#FF0000">Note: Echo requires T3 plugin to be installed and enabled.</span><p></p>
+			<p>Copyright 2011 - 2013 <a href='http://www.minitek.gr/' title='Visit minitek.gr!'>Minitek.gr</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+			</div>]]>
+	</description>
+	<files>
+		<filename>message.php</filename>
+		<filename>error.php</filename>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_v1header.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_v1header.sys.ini</language>
+	</languages>
+	<positions>
+		<position>languageswitcherload</position>
+		<position>search-popup</position>
+		<position>login-popup</position>
+		<position>mainnav</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>mast-col</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+		<position>position-16</position>
+		<position>position-17</position>
+		<position>position-18</position>
+		<position>position-18</position>
+		<position>position-19</position>
+		<position>position-20</position>
+		<position>position-21</position>
+		<position>position-22</position>
+		<position>position-23</position>
+		<position>position-24</position>
+		<position>position-25</position>
+		<position>position-26</position>
+		<position>position-27</position>
+		<position>position-28</position>
+		<position>position-29</position>
+		<position>position-30</position>
+		<position>position-31</position>
+		<position>position-32</position>
+		<position>position-33</position>
+		<position>position-34</position>
+		<position>position-35</position>
+		<position>position-36</position>
+		<position>position-37</position>
+		<position>position-28</position>
+		<position>position-39</position>
+		<position>position-40</position>
+		<position>position-41</position>
+		<position>position-42</position>
+		<position>mn-parallax1</position>
+		<position>mn-parallax2</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>debug</position>
+	</positions>
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend"> 
+			
+			<fieldset name="echo_image" label="T3_ECHO_LABEL" description="T3_ECHO_DESC">
+			
+			<field name="slider-caption" type="radio" default="0"
+						 global="0"
+						 label="T3_ECHO_SLIDER_CAPTION_LABEL"
+						 description="T3_ECHO_SLIDER_CAPTION_DESC">
+				<option value="0" class="off">JNO</option>
+				<option value="1" class="on">JYES</option>
+			</field>
+
+			<field name="slider_image" type="t3media" default="" label="T3_ECHO_SLIDER_IMAGE_LABEL" description="T3_ECHO_SLIDER_IMAGE_DESC"/>
+			
+			<field name="slider-caption-ico" type="text" default="" filter="RAW" size="350"
+				 label="T3_ECHO_SLIDER_ICO_LABEL"
+				 description="T3_ECHO_SLIDER_ICO_DESC"
+				 placeholder="T3_ECHO_SLIDER_ICO_LABEL"
+			/> 
+			
+			<field name="slider-caption-tilte" type="text" default="" filter="RAW" size="50"
+				 label="T3_ECHO_SLIDER_TITLE_LABEL"
+				 description="T3_ECHO_SLIDER_TITLE_LABEL"
+				 placeholder="T3_ECHO_SLIDER_TITLE_DESC"
+			/> 
+
+			<field name="slider-caption-btn-text" type="text" default="" filter="RAW" size="50"
+				 label="T3_ECHO_SLIDER_BUTTON_TEXT_LABEL"
+				 description="T3_ECHO_SLIDER_BUTTON_TEXT_DESC"
+				 placeholder="T3_ECHO_SLIDER_BUTTON_TEXT_LABEL"
+			/> 
+			<field name="slider-caption-btn-link" type="text" default="" filter="RAW" size="50"
+				 label="T3_ECHO_SLIDER_BUTTON_LINK_LABEL"
+				 description="T3_ECHO_SLIDER_BUTTON_LINK_DESC"
+				 placeholder="T3_ECHO_SLIDER_BUTTON_LINK_LABEL"
+			/> 
+			</fieldset>
+			
+		</fields>
+	</config>
+		<updateservers>
+	</updateservers>
+
+</extension>

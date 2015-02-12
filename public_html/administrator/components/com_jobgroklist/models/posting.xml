@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="params" label='COM_JOBGROKLIST_MODELS_POSTING_XML_PARAMS'>
+    <fieldset name="params" label='COM_JOBGROKLIST_MODELS_POSTING_XML_PARAMS' addpath="/administrator/components/com_content/elements">
+        <field name="pre_article" type="text" default="0" label='COM_JOBGROKLIST_MODELS_POSTING_XML_PRE_ARTICLE' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_PRE_ARTICLE' />
+        <field name="post_article" type="text" default="0" label='COM_JOBGROKLIST_MODELS_POSTING_XML_POST_ARTICLE' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_POST_ARTICLE' />
+        <field name="display_company_in_header" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_DISPLAY_COMPANY_IN_HEADER' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_DISPLAY_COMPANY_IN_HEADER'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_jobtitle_in_header" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_DISPLAY_JOBTITLE_IN_HEADER' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_DISPLAY_JOBTITLE_INHEADER'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_posted_on" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_POSTING_DATE' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_POSTING_DATE'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_closing_on" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_CLOSING_DATE' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_CLOSING_DATE'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_location" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_LOCATION' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_LOCATION'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_loc_description" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_LOC_DESCRIPTION' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_LOC_DESCRIPTION'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_loc_address" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_LOC_ADDRESS' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_LOC_ADDRESS'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_category" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_CATEGORY' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_CATEGORY'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_department" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_DEPARTMENT' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_DEPARTMENT'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_shift" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_SHIFT' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_SHIFT'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_job_type" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_JOB_TYPE' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_JOB_TYPE'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_education" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_EDUCATION' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_EDUCATION'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_pay_rate" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_PAY_RATE' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_PAY_RATE'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_duration" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_DURATION' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_DURATION'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_travel" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_TRAVEL' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_TRAVEL'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_job_description" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_JOB_DESCRIPTION' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_JOB_DESCRIPTION'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+        <field name="display_preferred_skills" type="list" default="99" label='COM_JOBGROKLIST_MODELS_POSTING_XML_PREFERRED_SKILLS' description='COM_JOBGROKLIST_MODELS_POSTING_XML_SH_PREFERRED_SKILLS'>
+            <option value="99">COM_JOBGROKLIST_MODELS_POSTING_XML_USE_GLOBAL</option>
+            <option value="0">COM_JOBGROKLIST_MODELS_POSTING_XML_HIDE</option>
+            <option value="1">COM_JOBGROKLIST_MODELS_POSTING_XML_SHOW</option>
+        </field>
+    </fieldset>
+    </fields>
+</form>

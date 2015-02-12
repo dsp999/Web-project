@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title='COM_JOBGROKLIST_VIEWS_DENIED_TMPL_DEFAULT_XML_ACCESS_DENIED'>
+        <message>COM_JOBGROKLIST_VIEWS_DENIED_TMPL_DEFAULT_XML_ACCESS_DENIED_MESSAGE</message>
+    </layout>
+    <state>
+        <name>COM_JOBGROKLIST_VIEWS_DENIED_TMPL_DEFAULT_XML_ACCESS_DENIED</name>
+        <description>COM_JOBGROKLIST_VIEWS_DENIED_TMPL_DEFAULT_XML_ACCESS_DENIED_DESCRIPTION</description>
+    </state>
+</metadata>

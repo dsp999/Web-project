@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+		<file>js/script.js</file>
+	</scripts>
+	
+	<stylesheets>
+		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic</file>
+		<file>http://fonts.googleapis.com/css?family=Expletus+Sans:400,500,700,600</file>
+	</stylesheets>
+	
+</assets>
+

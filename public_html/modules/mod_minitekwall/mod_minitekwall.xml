@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="1.7.0" method="upgrade">
+  <name>Minitek Wall module</name>
+  <author>Minitek.gr</author>
+  <creationDate>August 2014</creationDate>
+  <copyright>Copyright (C) 2011-2014 Minitek.gr. All rights reserved.</copyright>
+  <authorUrl>www.minitek.gr</authorUrl>
+  <version>3.0.2</version>
+  <license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+  
+  <description>
+	<![CDATA[
+		<h1>Minitek Wall module</h1>
+		<p>Minitek Wall is the most powerful and robust grid system for Joomla!</p>
+	]]>	
+  </description>
+  
+  <files>
+  	<filename module="mod_minitekwall">mod_minitekwall.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl</folder>
+	<folder>assets</folder>
+  </files>
+    
+  <languages>
+  	<language tag="en-GB">en-GB.mod_minitekwall.ini</language>
+	<language tag="en-GB">en-GB.mod_minitekwall.sys.ini</language>
+  </languages>
+  
+	<config>
+	
+	<fields name="params">
+		
+		<fieldset name="MINITEKWALL_CONFIG_GENERAL_SETTINGS">
+		
+			<field 
+				name="moduleclass_sfx" 
+				type="text" 
+				default="" 
+				label="MOD_MINITEKWALL_CONFIG_CLASS_SUFFIX_LABEL" 
+				description="MOD_MINITEKWALL_CONFIG_CLASS_SUFFIX_DESC"
+			/>
+			
+			<field
+				name="auto_module_id"
+				type="list"
+				default="1"
+				class="btn-group"
+				label="MOD_MINITEKWALL_CONFIG_AUTO_MODULE_ID_LABEL"
+				description="MOD_MINITEKWALL_CONFIG_AUTO_MODULE_ID_DESC"
+			>
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+			
+			<field 
+				name="custom_module_id" 
+				type="text" 
+				default="" 
+				label="MOD_MINITEKWALL_CONFIG_CUSTOM_MODULE_ID_LABEL" 
+				description="MOD_MINITEKWALL_CONFIG_CUSTOM_MODULE_ID_DESC" 
+			/>
+			
+		</fieldset>
+		
+		<fieldset name="MINITEKWALL_CONFIG_BASIC_SETTINGS">
+		
+			<field 
+				name="module_id" 
+				type="sql" 
+				default="" 
+				label="MOD_MINITEKWALL_CONFIG_MODULE_LABEL" 
+				description="MOD_MINITEKWALL_CONFIG_MODULE_DESC" 
+				query="SELECT id, name FROM #__minitek_wall_modules WHERE published=1" 
+				key_field="id" 
+				value_field="name" 
+			/>
+						
+		</fieldset>
+		
+		<fieldset name="MINITEKWALL_CONFIG_ADVANCED_SETTINGS">
+			
+			<field 
+				name="load_jquery" 
+				type="radio" 
+				default="0"
+				class="btn-group"
+				label="MOD_MINITEKWALL_CONFIG_LOAD_JQUERY_LABEL" 
+				description="MOD_MINITEKWALL_CONFIG_LOAD_JQUERY_DESC"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+									
+			<field 
+				name="load_fontawesome" 
+				type="radio" 
+				default="1" 
+				class="btn-group"
+				label="MOD_MINITEKWALL_CONFIG_LOAD_FONTAWESOME_LABEL" 
+				description="MOD_MINITEKWALL_CONFIG_LOAD_FONTAWESOME_DESC"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="load_fancybox" 
+				type="radio" 
+				default="1" 
+				class="btn-group"
+				label="MOD_MINITEKWALL_CONFIG_LOAD_FANCYBOX_LABEL" 
+				description="MOD_MINITEKWALL_CONFIG_LOAD_FANCYBOX_DESC"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="enable_cache" 
+				type="list" 
+				default="0" 
+				label="MOD_MINITEKWALL_CONFIG_CACHING_LABEL" 
+				description="MOD_MINITEKWALL_CONFIG_CACHING_DESC"
+			>
+				<option value="1">MOD_MINITEKWALL_CONFIG_GLOBAL_CACHING</option>
+				<option value="0">MOD_MINITEKWALL_CONFIG_NO_CACHING</option>
+			</field>
+			
+			<field 
+				name="cache_time" 
+				type="text" 
+				default="30" 
+				label="MOD_MINITEKWALL_CONFIG_CACHE_TIME_LABEL" 
+				description="MOD_MINITEKWALL_CONFIG_CACHE_TIME_DESC" 
+			/>
+						
+		</fieldset>
+		
+	</fields>
+		
+	</config>
+	
+</extension>

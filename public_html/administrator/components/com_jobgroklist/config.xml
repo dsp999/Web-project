@@ -1,0 +1,180 @@
+<config>
+	<fields>
+            <fieldset name='basic'> 
+                <field name="default_viewlevel" type="sql" 
+                    query="SELECT `id` AS value, `title` AS default_viewlevel FROM #__viewlevels;" 
+                    default="1" label='COM_JOBGROKLIST_CONFIG_XML_DEFAULT_POSTING_VIEWLEVEL' description='COM_JOBGROKLIST_CONFIG_XML_SH_DEFAULT_POSTING_VIEWLEVEL' />
+                <field name="use_legacy_router" type="radio" class="btn-group" default="2" label='COM_JOBGROKLIST_CONFIG_XML_ROUTING' description='COM_JOBGROKLIST_CONFIG_XML_SH_ROUTING'>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_YES</option>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_NO</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_SEF_OFF</option>
+                </field>
+                <field name="display_errors" type="radio" class="btn-group" default="99" label='COM_JOBGROKLIST_CONFIG_XML_DISPLAY_ERRORS' description='COM_JOBGROKLIST_CONFIG_XML_SH_DISPLAY_ERRORS'>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_YES</option>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_NO</option>
+                    <option value="99">COM_JOBGROKLIST_CONFIG_XML_USE_PHP_SETTING</option>
+                </field>
+                <field name="email_to_a_friend" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_EMAIL_TO_A_FRIEND' description='COM_JOBGROKLIST_CONFIG_XML_SH_EMAIL_TO_A_FRIEND'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_YES</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_NO</option>                    
+                </field>
+                <field name="email_to_a_friend_text" type="text" default="Email a friend" label='COM_JOBGROKLIST_CONFIG_XML_EMAIL_TO_A_FRIEND_TEXT' description='COM_JOBGROKLIST_CONFIG_XML_SH_EMAIL_TO_A_FRIEND_TEXT' />
+            </fieldset>
+            <fieldset name='rss_settings'>
+                <field name="spacer1" type="spacer" class="text" label='COM_JOBGROKLIST_CONFIG_XML_SPACER_RSS_SETTINGS_POSTINGS' />
+                <field name="mobile_app_menu_item" type="sql" default="0" label='COM_JOBGROKLIST_CONFIG_XML_MOBILE_APP_MENU_ITEM' description='COM_JOBGROKLIST_CONFIG_XML_SH_MOBILE_APP_MENU_ITEM' query="SELECT '' as value,'- Select Menu Item -' as mobile_app_menu_item UNION SELECT id AS value, title AS mobile_app_menu_item FROM #__menu WHERE INSTR(`link`,'com_jobgroklist')>0 AND INSTR(`link`,'view=postings')>0;" />
+                <field name="rss_company" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_COMPANY' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_COMPANY'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_job_title" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_JOB_TITLE' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_JOB_TITLE'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_location" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_LOCATION' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_LOCATION'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_loc_description" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_LOC_DESCRIPTION' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_LOC_DESCRIPTION'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_loc_address" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_LOC_ADDRESS' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_LOC_ADDRESS'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_summary" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_SUMMARY' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_SUMMARY'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_posting_date" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_POSTING_DATE' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_POSTING_DATE'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_closing_date" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_CLOSING_DATE' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_CLOSING_DATE'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="spacer2" type="spacer" class="text" label='COM_JOBGROKLIST_CONFIG_XML_SPACER_RSS_SETTINGS_JOBS' />
+                <field name="rss_job_code" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_JOB_CODE' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_JOB_CODE'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_category" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_CATEGORY' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_CATEGORY'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_department" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_DEPARTMENT' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_DEPARTMENT'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_shift" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_SHIFT' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_SHIFT'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_job_type" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_JOB_TYPE' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_JOB_TYPE'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_education" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_EDUCATION' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_EDUCATION'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_pay_rate" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_PAY_RATE' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_PAY_RATE'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_pay_range" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_PAY_RANGE' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_PAY_RANGE'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_duration" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_DURATION' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_DURATION'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_travel" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_TRAVEL' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_TRAVEL'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_job_description" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_JOB_DESCRIPTION' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_JOB_DESCRIPTION'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+                <field name="rss_preferred_skills" type="radio" class="btn-group" default="1" label='COM_JOBGROKLIST_CONFIG_XML_RSS_PREFERRED_SKILLS' description='COM_JOBGROKLIST_CONFIG_XML_SH_RSS_PREFERRED_SKILLS'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_HIDE</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_FEED</option>
+                    <option value="2">COM_JOBGROKLIST_CONFIG_XML_MOBILE</option>
+                    <option value="3">COM_JOBGROKLIST_CONFIG_XML_BOTH</option>
+                </field>
+            </fieldset>
+            <fieldset name='miscellaneous_settings'>
+		<field type="spacer" default="&lt;div style=quot;width:100%; color: #666666; font-weight: bold; border-top:1px solid #f6f6f6; border-bottom:1px solid #f6f6f6&quot;&gt;Locale Settings&lt;/div&gt;" />
+		<field name="default_country_code" type="text" label='COM_JOBGROKLIST_CONFIG_XML_LOCALE_DEFAULT_COUNTRY_CODE' description='COM_JOBGROKLIST_CONFIG_XML_SH_LOCALE_DEFAULT_COUNTRY_CODE' default="US"/>
+                <field name="default_days_to_close" type="text" label='COM_JOBGROKLIST_CONFIG_XML_DEFAULT_DAYS_TO_CLOSE' description='COM_JOBGROKLIST_CONFIG_XML_SH_DEFAULT_DAYS_TO_CLOSE' default="0" />
+                <field name="override_all_closing_dates" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_CONFIG_XML_OVERRIDE_CLOSING_DATES' description='COM_JOBGROKLIST_CONFIG_XML_SH_OVERRIDE_CLOSING_DATES'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_NO</option>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_YES</option>
+                </field>
+                <field name="auto_generate_job_codes" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_CONFIG_XML_AUTO_GEN_JOBCODES' description='COM_JOBGROKLIST_CONFIG_XML_SH_AUTO_GEN_JOBCODES'>
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_YES</option>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_NO</option>
+                </field>
+                <field name="auto_generate_job_codes_definition" type="text" label='COM_JOBGROKLIST_CONFIG_XML_AUTO_GEN_JOBCODES_DEF' description='COM_JOBGROKLIST_CONFIG_XML_SH_AUTO_GEN_JOBCODES_DEF' default="[job_id][date]"/>
+                <field name="auto_generate_job_codes_date_format" type="text" label='COM_JOBGROKLIST_CONFIG_XML_AUTO_GEN_JOBCODES_DATE_FORMAT' description='COM_JOBGROKLIST_CONFIG_XML_SH_AUTO_GEN_JOBCODES_DATE_FORMAT' default="Y" />
+                <field name="auto_generate_job_codes_leading_zeroes" type="text" label='COM_JOBGROKLIST_CONFIG_XML_AUTO_GEN_JOBCODES_LEADING_ZEROES' description='COM_JOBGROKLIST_CONFIG_XML_SH_AUTO_GEN_JOBCODES_LEADING_ZEROES' default="4" />
+                <field name="plugin_allow_summary" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_CONFIG_XML_ALLOW_PLUGIN_SUMMARY' description='COM_JOBGROKLIST_CONFIG_XML_SH_ALLOW_PLUGIN_SUMMARY'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_NO</option>    
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_YES</option>
+                </field>
+                <field name="plugin_allow_jobdescription" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_CONFIG_XML_ALLOW_PLUGIN_JOB_DESCRIPTION' description='COM_JOBGROKLIST_CONFIG_XML_SH_ALLOW_PLUGIN_JOB_DESCRIPTION'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_NO</option>    
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_YES</option>
+                </field>                
+                <field name="plugin_allow_preferredskills" type="radio" class="btn-group" default="0" label='COM_JOBGROKLIST_CONFIG_XML_ALLOW_PLUGIN_PREFERRED_SKILLS' description='COM_JOBGROKLIST_CONFIG_XML_SH_ALLOW_PLUGIN_PREFERRED_SKILLS'>
+                    <option value="0">COM_JOBGROKLIST_CONFIG_XML_NO</option>    
+                    <option value="1">COM_JOBGROKLIST_CONFIG_XML_YES</option>
+                </field>
+            </fieldset>
+            <fieldset name="permissions" description='COM_JOBGROKLIST_CONFIG_XML_PERMISSIONS_DESC' label='COM_JOBGROKLIST_CONFIG_XML_PERMISSIONS_LABEL' >
+                <field name="rules" type="rules" class="inputbox" component="com_jobgroklist" filter="rules" validate="rules" label='COM_JOBGROKLIST_CONFIG_XML_PERMISSIONS_LABEL' section="component" />
+            </fieldset>
+        </fields>
+</config>
